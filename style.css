@@ -1,0 +1,189 @@
+/* ==================== VARIABLES ==================== */
+:root {
+    --bg-color: #0F0F0F;
+    --text-primary: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --accent-color: #FFFFFF;
+    --card-bg: #1A1A1A;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== GLOBAL RESET ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.btn-resume {
+    display: inline-block;
+    border: 1px solid var(--accent-color);
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 12px 40px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-resume:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* ==================== SECTIONS GENERAL ==================== */
+section {
+    margin-top: 80px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* ==================== SKILLS ==================== */
+.skills-container {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+/* ==================== PROJECT CARDS ==================== */
+.project-card {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.project-card h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.more-link {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text-primary);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 2px;
+}
+
+/* ==================== CERTIFICATIONS ==================== */
+.cert-item {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.cert-item strong {
+    color: var(--text-primary);
+}
+
+.cert-item span {
+    color: var(--text-secondary);
+}
+
+/* ==================== CONTACT ==================== */
+.contact-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 100px;
+    padding-bottom: 40px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+/* ==================== MOBILE ==================== */
+@media (max-width: 480px) {
+    .hero h1 { font-size: 2.2rem; }
+    body { padding: 20px 15px; }
+}
